@@ -1,8 +1,9 @@
 # [react-to-do-list](https://duncan-to-do-list.netlify.app/)
 
+![To-Do-List Photo](https://user-images.githubusercontent.com/87501964/152047973-d28e6a53-88d5-467b-90bd-b918b83d0fae.PNG)
+
 My react "To Do List" with local storage. 
 
-![React-to-do-list-photo](https://user-images.githubusercontent.com/87501964/141011020-8e50bf4c-da0a-4ca5-a29c-9e34c73f796f.PNG)
 
 
 # Getting Started with Create React App
