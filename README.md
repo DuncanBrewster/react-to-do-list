@@ -1,4 +1,4 @@
-# [react-to-do-list](https://duncanbrewster.github.io/react-to-do-list/)
+# [react-to-do-list](https://duncan-to-do-list.netlify.app/)
 
 My react "To Do List" with local storage. 
 
