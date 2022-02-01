@@ -4,13 +4,13 @@
   box-sizing: border-box;
 }
 body {
-  background-image: linear-gradient(120deg, #3ca53c 0%,	#90EE90 100%);
+  background-image: linear-gradient(120deg, #276792da 0%,	#71b0d4 100%);
   color: white;
   font-family: "Poppins", sans-serif;
   min-height: 100vh;
 }
 header {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 header,
@@ -19,22 +19,23 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s ease;
 }
 form input,
 form button {
-  padding: 0.5rem;
-  font-size: 2rem;
+  padding: 0.8rem;
+  font-size: 1.3rem;
   border: none;
   background: white;
 }
 form button {
-  color: #228B22;
+  color: #276792da;
   background: #f7fffe;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 form button:hover {
-  background: #228B22;
+  background: #276792da;
   color: white;
 }
 .todo-container {
@@ -44,7 +45,7 @@ form button:hover {
 }
 
 .todo-list {
-  min-width: 30%;
+  min-width: 250px;
   list-style: none;
 }
 
@@ -67,16 +68,24 @@ form button:hover {
 
 .trash-btn,
 .complete-btn {
-  background: #228B22;
+  background: #276792da;
   color: white;
-  border: none;
+  border-top: none;
+  border-bottom: none;
   padding: 1rem;
   cursor: pointer;
   font-size: 1rem;
 }
 .complete-btn {
-  background: #4dac4d;
+  border-right: none;
+  border-left: none;
 }
+
+.trash-btn {
+  border-left-color: #71b0d4;
+  border-right: none;
+}
+
 .todo-item {
   padding: 0rem 0.5rem;
 }
@@ -86,15 +95,29 @@ form button:hover {
   pointer-events: none;
 }
 
-.fall {
-  transform: translateY(10rem) rotateZ(20deg);
-  opacity: 0;
-}
-
 .completed {
   text-decoration: line-through;
   opacity: 0.5;
 }
+
+/*Delete Animation*/
+.fade {
+  animation: fade-animation .6s cubic-bezier(.55,-0.04,.91,.94) forwards;
+}
+
+@keyframes fade-animation {
+  from {
+      opacity: 1;
+      transform: scale(1);
+  }
+
+  to {
+      opacity: 0;
+      transform: scale(0);
+  }
+
+}
+/*End Delete Animation*/
 
 /*CUSTOM SELECTOR */
 select {
@@ -115,7 +138,7 @@ select {
   overflow: hidden;
 }
 select {
-  color: #228B22;
+  color: #276792da;
   font-family: "Poppins", sans-serif;
   cursor: pointer;
   width: 12rem;
@@ -127,13 +150,45 @@ select {
   top: 0;
   right: 0;
   padding: 1rem;
-  background: #228B22;
+  background: #276792da;
   cursor: pointer;
   pointer-events: none;
+  transition: all 0.3s ease;
 }
-/* Transition */
-/*
+
 .select:hover::after {
-  transform: scale(1.5);
+  background: white;
+  color: #276792da;
 }
-*/
+
+
+@media(orientation: portrait) {
+
+  form input {
+      width: 40%;
+      border-radius: none;
+      margin-left: 1rem;
+  }
+
+  select {
+      color: #276792da;
+      background-color: white;
+      width: 10rem;
+      border-radius: none;
+      min-width: none;
+      cursor: pointer;
+      padding: 1rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  form input {
+      width: 40%;
+      border-radius: none;
+      margin-left: 1rem;
+  }
+
+}
+
+
+

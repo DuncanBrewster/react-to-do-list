@@ -3,7 +3,9 @@ import React from "react";
 const Todo = ({text, todo, todos, setTodos}) => {
     //events
     const deleteHandler = () => {
-        setTodos(todos.filter((el) => el.id !== todo.id));
+        setTodos(
+            todos.filter((el) => 
+                el.id !== todo.id));
     };
     const completeHandler = () => {
         setTodos(
@@ -18,6 +20,7 @@ const Todo = ({text, todo, todos, setTodos}) => {
             })
         );
     };
+    
 
     return(
         <div className="todo">
