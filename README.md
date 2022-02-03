@@ -2,7 +2,7 @@
 
 # [react-to-do-list](https://duncan-to-do-list.netlify.app/)
 
-A To Do List app with dynamic features and local storage. 
+A To Do List app with dynamic features and local storage. This project is currently hosted on [Netlify](https://duncan-to-do-list.netlify.app).
 ## Features
 * Enter tasks to add to your To Do List
 * Check off completed tasks or remove them from your list
