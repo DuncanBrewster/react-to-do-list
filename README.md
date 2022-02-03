@@ -24,7 +24,6 @@ git clone https://duncan-to-do-list.netlify.app.git
 
 This project:
 
-* was built with **JavaScript**.
-* uses **semantic HTML** markup.
+* was built with **React**.
 * is styled with **CSS**.
-* hosted on **Netlify**.
+* hosted on [Netlify](https://duncan-to-do-list.netlify.app).
