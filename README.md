@@ -15,7 +15,7 @@ A To Do List React application with dynamic features and local storage. This pro
 1. Clone the repository to your computer.
 
 ```bash
-git clone https://duncan-to-do-list.netlify.app.git
+git clone https://github.com/DuncanBrewster/react-to-do-list.git
 ```
 
 2. To view the project locally, navigate to the project folder and open the `index.html` file in a web browser.
